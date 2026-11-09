@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensagens - Estante Virtual</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+  <script src="../js/mensagens.js" defer></script>
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <a href="../index.html">Início</a>
+    <a href="explorar.html">Explorar</a>
+    <a href="estante.html">Estante</a>
+    <a href="mensagens.html">Mensagens</a>
+  </nav>
+
+  <main>
+    <h1>Mensagens</h1>
+    <p>Cadastre uma mensagem e veja a lista atualizar na hora, sem recarregar a página.</p>
+
+    <!-- Formulário (fetch POST) -->
+    <section class="secao">
+      <h2>Nova Mensagem</h2>
+
+      <form id="form-mensagem" class="form-contato" novalidate>
+        <div class="campo-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" maxlength="100" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="campo-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" maxlength="100" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="campo-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+
+        <button type="submit" id="btn-salvar" class="btn-enviar">Salvar Mensagem</button>
+      </form>
+    </section>
+
+    <p id="status-mensagens" class="mensagem-busca" role="status" hidden></p>
+
+    <!-- Lista (fetch GET) -->
+    <section class="secao">
+      <h2>Mensagens Recebidas</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Mensagem</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody id="lista-mensagens">
+          <tr><td colspan="5" style="text-align: center;">Carregando...</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Estante Virtual</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorar - Estante Virtual</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <a href="../index.html">Início</a>
+    <a href="explorar.html">Explorar</a>
+    <a href="estante.html">Estante</a>
+    <a href="mensagens.html">Mensagens</a>
+  </nav>
+
+  <main>
+    <h1>Explorar Obras</h1>
+    <p>Pesquise novos livros para adicionar à sua coleção:</p>
+
+    <!-- Barra de Pesquisa -->
+    <div class="busca-box">
+      <input type="text" id="input-busca" placeholder="Digite o título, autor ou gênero...">
+      <button id="btn-busca">Buscar</button>
+    </div>
+
+    <p id="mensagem-busca" class="mensagem-busca" role="status" hidden></p>
+    <div id="resultados-busca" class="livros-grid"></div>
+
+    <section class="secao">
+      <h2>Filtrar por Categoria</h2>
+      <div class="categorias-container">
+        <span class="categoria-tag">Todos</span>
+        <span class="categoria-tag">Fantasia</span>
+        <span class="categoria-tag">Distopia</span>
+        <span class="categoria-tag">Clássicos</span>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Catálogo de Livros</h2>
+      <div class="livros-grid">
+        <div class="card-livro">
+          <img src="../img/hobbit.webp" alt="Capa do livro O Hobbit">
+          <h3>O Hobbit</h3>
+          <p>Fantasia / Aventura</p>
+        </div>
+
+        <div class="card-livro">
+          <img src="../img/1984.jpg" alt="Capa do livro 1984">
+          <h3>1984</h3>
+          <p>Ficção Científica / Distopia</p>
+        </div>
+
+        <div class="card-livro">
+          <img src="../img/dom-quixote.jpg" alt="Capa do livro Dom Quixote">
+          <h3>Dom Quixote</h3>
+          <p>Literatura Clássica</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Estante Virtual </p>
+  </footer>
+
+</body>
+</html>

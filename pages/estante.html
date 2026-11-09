@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estante - Estante Virtual</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <a href="../index.html">Início</a>
+    <a href="explorar.html">Explorar</a>
+    <a href="estante.html">Estante</a>
+    <a href="mensagens.html">Mensagens</a>
+  </nav>
+
+  <main>
+    <h1>Minha Estante</h1>
+    <p>Acompanhe o andamento das suas leituras em um só lugar.</p>
+
+    <section class="secao">
+      <h2>Livros Salvos</h2>
+      <div class="livros-grid">
+        <!-- Livro Lendo Atualmente -->
+        <div class="card-livro">
+          <img src="../img/hobbit.webp" alt="Capa do livro O Hobbit">
+          <h3>O Hobbit</h3>
+          <span class="badge-status status-lendo">Lendo (65%)</span>
+          <div class="progresso-container">
+            <div class="progresso-barra" style="width: 65%;"></div>
+          </div>
+        </div>
+
+        <!-- Livro Lido -->
+        <div class="card-livro">
+          <img src="../img/dom-quixote.jpg" alt="Capa do livro Dom Quixote">
+          <h3>Dom Quixote</h3>
+          <span class="badge-status status-lido">Concluído</span>
+          <div class="progresso-container">
+            <div class="progresso-barra" style="width: 100%; background-color: #27ae60;"></div>
+          </div>
+        </div>
+
+        <!-- Livro Quero Ler -->
+        <div class="card-livro">
+          <img src="../img/1984.jpg" alt="Capa do livro 1984">
+          <h3>1984</h3>
+          <span class="badge-status status-quero">Na Fila</span>
+          <div class="progresso-container">
+            <div class="progresso-barra" style="width: 0%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Estante Virtual </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início - Estante Virtual</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Menu de Navegação -->
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="pages/explorar.html">Explorar</a>
+    <a href="pages/estante.html">Estante</a>
+    <a href="pages/mensagens.html">Mensagens</a>
+    <a href="php/index.php">Painel Admin</a>
+  </nav>
+
+  <!-- Banner -->
+  <img src="img/banner.jpg" alt="Interior da Livraria" class="hero-banner">
+
+  <main>
+    <section class="secao">
+      <h1>Destaques da Semana</h1>
+      <p>Confira os títulos mais populares da nossa acervo nesta semana:</p>
+
+      <div class="livros-grid">
+        <div class="card-livro">
+          <img src="img/hobbit.webp" alt="Capa do livro O Hobbit">
+          <h3>O Hobbit</h3>
+          <p>J.R.R. Tolkien</p>
+        </div>
+
+        <div class="card-livro">
+          <img src="img/1984.jpg" alt="Capa do livro 1984">
+          <h3>1984</h3>
+          <p>George Orwell</p>
+        </div>
+
+        <div class="card-livro">
+          <img src="img/dom-quixote.jpg" alt="Capa do livro Dom Quixote">
+          <h3>Dom Quixote</h3>
+          <p>Miguel de Cervantes</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Gêneros Populares</h2>
+      <div class="categorias-container">
+        <span class="categoria-tag">Fantasia</span>
+        <span class="categoria-tag">Ficção Científica</span>
+        <span class="categoria-tag">Clássicos</span>
+        <span class="categoria-tag">Aventura</span>
+        <span class="categoria-tag">Romance</span>
+        <span class="categoria-tag">História</span>
+      </div>
+    </section>
+
+    <section class="secao">
+      <h2>Sobre a Estante Virtual</h2>
+      <p>Sua plataforma para organizar leituras, descobrir novos autores e gerenciar sua coleção pessoal de livros de forma simples e rápida.</p>
+    </section>
+
+    <!-- Formulário -->
+    <section class="secao">
+      <h2>Fale Conosco</h2>
+      <p>Tem alguma dúvida, crítica ou sugestão? Envie uma mensagem para nossa equipe:</p>
+
+      <form action="php/processa_contato.php" method="POST" class="form-contato">
+        <div class="campo-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="campo-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="campo-group">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Estante Virtual</p>
+  </footer>
+
+</body>
+</html>
