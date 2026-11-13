@@ -2,7 +2,7 @@
 $host = "localhost";
 $dbname = "estante_virtual";
 $usuario = "root";
-$senha = "";
+$senha = "root";
 
 try {
     $conexao = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $usuario, $senha);
