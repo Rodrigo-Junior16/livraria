@@ -1,0 +1,4 @@
+Código Para Rodar o Site no Codepaces
+
+sudo service mysql start
+/usr/bin/php8.3 -S 0.0.0.0:8000
