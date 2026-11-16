@@ -201,22 +201,6 @@ h1, h2, h3 {
   background-color: #2980b9;
 }
 
-/* Mensagens e resultados da busca (API) */
-.mensagem-busca {
-  padding: 10px 14px;
-  border-radius: 6px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.mensagem-busca[hidden] { display: none; }
-.mensagem-busca.info { background-color: #ebf5fb; color: #2980b9; }
-.mensagem-busca.sucesso { background-color: #eafaf1; color: #27ae60; }
-.mensagem-busca.aviso { background-color: #fef9e7; color: #b9770e; }
-.mensagem-busca.erro { background-color: #fdedec; color: #c0392b; }
-
-#resultados-busca { margin-bottom: 30px; }
-
 /* Formulário Fale Conosco */
 .form-contato {
   display: flex;
